@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Pete's Pizzeria </title>
+        <link rel="icon" href="images/favicon.ico">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script type = "text/javascript" src="main.js"></script>
+
+        <!-- my css -->
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Pete's Pizzeria</h1>
+        </div>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Pete's Pizzeria</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Order</a></li>
+              </ul>
+            </div>
+          </nav>
+ 
+        <script>
+            var total;
+        </script>
+
+        <!-- pizza dough -->
+        <div>
+            <p>Select the type of dough you would like:</p>
+            <input type="image" src="images/normal crust.jpg" alt="a plain pizza crust" onclick="plainDough(total)">
+        
+            <input type="image" src="images/whole wheat crust.jpg" alt="a plain whole wheat pizza crust" onclick="wheatDough(total)"> 
+        </div><br>
+
+        <!-- Pizza Sauce -->
+        <section>
+            <p>Select the type of pizza sauce you would like:</p>
+            <input type="image" src="images/red sauce.jpg" alt="tomato pizza sauce" onclick="redSauce(total)">
+        
+            <input type="image" src="images/white sauce.jpg" alt="alfredo pizza sauce" onclick="whiteSauce(total)">
+        </section><br>
+
+        <!-- Pizza Cheese -->
+        <section>
+            <p>Select the type of cheese you would like:</p>
+            <input type="image" src="images/mozzarella cheese.jpg" alt="grated mozzarella cheese" onclick="mozzCheese(total)">
+        
+            <input type="image" src="images/cheddar cheese.jpg" alt="grated cheddar cheese" onclick="cheddarCheese(total)">
+
+            <input type="image" src="images/parmesan cheese.jpeg" alt="grated parmesan cheese" onclick="parmCheese(total)">
+        </section><br>
+
+        <!-- Pizza toppings -->
+        <section>
+            <p>Select the toppings you would like:</p>
+            <input type="image" src="images/pepperoni.png" alt="pepperoni slices" onclick="pepTopping(total)">
+        
+            <input type="image" src="images/chicken.jpg" alt="diced chicken" onclick="chickenTopping(total)">
+
+            <input type="image" src="images/pineapple.jpg" alt="diced pineapple" onclick="pineTopping(total)">
+
+            <input type="image" src="images/tomatoes.png" alt="diced tomatoes" onclick="tomTopping(total)">
+
+            <input type="image" src="images/mushrooms.jpg" alt="sliced mushrooms" onclick="mushTopping(total)">
+
+            <input type="image" src="images/green peppers.jpg" alt="sliced green peppers" onclick="greenTopping(total)">
+
+            <input type="image" src="images/olives.jpg" alt="sliced olives" onclick="oliveTopping(total)">
+        </section><br>
+
+        <!-- Birthday Discount -->
+        <section>
+            <p>If it has been your birthday in the last two weeks, you may recieve a $10 discount on an order. The delivery driver will verify this by checking your ID when they arrive.</p>
+            <button type="button" class="btn btn-primary" onclick="birthday(total)">Add Birthday Discount</button>
+        </section>
+
+        <!-- Go to checkout -->
+        <a class="btn btn-primary" href="checkout.html" role="button"> Total</a>
+
+    <script src="main.js"></script>
+    </body>
+</html>

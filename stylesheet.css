@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(241, 213, 177);
+}
+
+h1, h2 {
+    font-family: 'Staatliches', cursive;
+    color: seashell;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input {
+    border-radius: 8px;
+    max-width: 10%;
+    height: auto;
+    margin-right: 2%;
+}
+
+.header {
+    background-color: red;
+    padding: 0%;
+    text-align: center;
+    
+}
+
+.welcome {
+    text-align: center;
+}
